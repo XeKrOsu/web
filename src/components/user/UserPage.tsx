@@ -51,8 +51,8 @@ const UserPage = async ({ id, logged_id, mode }: Props) => {
             icon: <i class="fa-solid fa-user" />,
             show_if: user.page?.html !== "",
             jsx:
-                <div class="p-4 rounded-lg bg-base-300">
-                    <div class="h-96 overflow-y-scroll">
+                <div class="items-center flex p-4 rounded-lg bg-base-300">
+                    <div class="grow max-w-96 overflow-y-scroll">
                         {user.page.html}
                     </div>
                 </div>
